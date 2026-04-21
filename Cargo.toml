@@ -1,0 +1,15 @@
+[package]
+name = "tulisp-ratatui"
+version = "0.1.0"
+edition = "2024"
+description = "Minimal tulisp bindings for ratatui."
+license = "GPL-3.0"
+
+[dependencies]
+tulisp = { git = "https://github.com/shsms/tulisp", branch = "vm", features = ["big_functions"] }
+ratatui = "0.29"
+crossterm = "0.28"
+
+[[example]]
+name = "hello"
+path = "examples/hello.rs"
